@@ -1,0 +1,11 @@
+deployment:
+  name: nginx
+  replicas: 2
+  image:
+    repository: nginx
+    tag: "1.14.2"
+  port: 80
+
+service:
+  name: nginx-svc
+  port: 80
