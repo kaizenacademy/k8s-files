@@ -4,6 +4,8 @@ metadata:
   name: {{ .Values.deployment.name }}
   labels:
     app: nginx
+    app: {{ .Chart.Name }}
+    kaizen: {{ .Release.Name }}
 spec:
   replicas: {{ .Values.deployment.replicas }}
   selector:

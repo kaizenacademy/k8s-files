@@ -9,3 +9,4 @@ deployment:
 service:
   name: nginx-svc
   port: 80
+  type: LoadBalancer
